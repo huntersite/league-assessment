@@ -4,15 +4,17 @@
   "description": "League Assessment",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 8080",
-  "build": "next build",
-  "start": "next start -p 8080"
+    "dev": "node server.js",
+    "build": "next build",
+      "start": "NODE_PATH=. NODE_ENV=production node server.js"
   },
   "author": "Derrick Hunter",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "next": "^9.2.2",
+    "next-routes": "^1.4.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
